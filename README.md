@@ -7,7 +7,7 @@ int main() {
     scanf("%d %d", &range_start, &range_end);
     
     if (range_start < 1 || range_end < 1 || range_start >= range_end) {
-        printf("Invalid range. Please enter positive integers with a valid range.\n");
+        printf(" enter positive integers\n");
         return 1;
     }
     
@@ -16,7 +16,7 @@ int main() {
     for (int num1 = range_start; num1 <= range_end; num1++) {
         int sum1 = 1;
         
-        // Calculate the sum of proper divisors for num1
+    
         for (int i = 2; i * i <= num1; i++) {
             if (num1 % i == 0) {
                 sum1 += i;
